@@ -30,12 +30,18 @@ export const Transactions = ({ items }) => {
 };
 
 Transactions.defaultProps = {
-  name: 'Friend name',
-  avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
+  type: 'unknown',
+  amount: '0.00',
+  currency: 'NONE',
 };
 
 Transactions.propTypes = {
-  name: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }),
+  ),
 };
