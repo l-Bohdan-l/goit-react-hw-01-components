@@ -5,7 +5,7 @@ import styles from './Profile.module.scss';
 export const Profile = ({ user }) => {
   const { username, tag, location, avatar, stats } = user;
   return (
-    <div className={styles.profile}>
+    <section className={styles.profile}>
       <div className={styles.description}>
         <img src={avatar} alt={username} className={styles.avatar} />
         <p className={styles.name}>{username}</p>
@@ -27,7 +27,7 @@ export const Profile = ({ user }) => {
           <span className={styles.quantity}>{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 
