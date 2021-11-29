@@ -31,12 +31,12 @@ export const FriendsList = ({ friends }) => {
 };
 
 FriendsList.defaultProps = {
-  title: 'Upload stats',
-  label: 'no label',
-  percentage: 'no percentage',
+  name: 'Friend name',
+  avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
 };
 
 FriendsList.propTypes = {
-  title: PropTypes.string.isRequired,
-  stats: PropTypes.arrayOf(PropTypes.shape({}).isRequired).isRequired,
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool,
 };
