@@ -2,9 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 320px;
+  min-height: 180px;
   margin: 0px auto;
   margin-top: 20px;
   background-color: #fff;

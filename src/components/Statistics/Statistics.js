@@ -6,7 +6,7 @@ import { generateColor } from './randomColor';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>{title}</h2>
+      {title ? <h2 className={styles.title}>{title}</h2> : ''}
       <ul className={styles.statList}>
         {stats.map(stat => {
           return (
@@ -26,7 +26,6 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.defaultProps = {
-  title: 'Upload stats',
   label: 'no label',
   percentage: 'no percentage',
 };

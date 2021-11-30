@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Profile user={userData} />
-        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
         <FriendsList friends={friends} />
         <Transactions items={items} />
       </header>
